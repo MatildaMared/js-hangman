@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
 
 body {
-    background-color: antiquewhite;
-    font-family: 'Roboto', sans-serif;
+    background-color: #07331e;
+    color: #FFF;
+    font-family: 'Pangolin', cursive;
+    /*font-family: 'Roboto', sans-serif;*/
 }
 
 .word {
@@ -10,10 +14,10 @@ body {
 }
 
 .letter-wrapper {
-    width: 50px;
+    width: 30px;
     height: 50px;
-    padding: 10px;
-    border-bottom: 2px solid #000;
+    padding: 5px;
+    border-bottom: 2px solid #FFF;
     margin: 10px;
     display: flex;
     align-items: center;
@@ -24,7 +28,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 500px;
-    height: 200px;
+    height: 160px;
 }
 
 .alphabet button {
@@ -32,18 +36,20 @@ body {
     border: none;
     width: 20px;
     height: 20px;
-    margin: 10px;
-    background-color: rgba(0, 0, 0, .2);
+    margin: 10px 10px 0 10px;
+    background-color: #01160c;
     border-radius: 50%;
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    color: #FFF;
 }
 
 .alphabet button:hover {
-    background-color: rgba(0, 0, 0, .4);
+    /*background-color: rgba(0, 0, 0, .4);*/
+    background-color: rgba(20, 22, 21, 0.4);
 }
 
 .hidden {
@@ -61,7 +67,8 @@ body {
 }
 
 .header h1 {
-    font-size: 4rem;
+    font-size: 2.8rem;
+    letter-spacing: 5px;
 }
 
 .main {
@@ -72,7 +79,8 @@ body {
 }
 
 .message {
-    height: 100px;
+    height: 90px;
+    color: #FFF;
 }
 
 /* Gubben */
@@ -85,7 +93,7 @@ body {
 #del1 {
 	width: 3px;
 	height: 100%;
-	background-color: black;
+	background-color: rgb(255, 255, 255);
 	position: absolute;
 	left: 0px;
 	bottom: 0px;
@@ -94,7 +102,7 @@ body {
 #del2 {
 	width: 70%;
 	height: 3px;
-	background-color: black;
+	background-color: rgb(255, 255, 255);
 	position: absolute;
 	top: 0;
 	left: 0px;
@@ -103,7 +111,7 @@ body {
 #del3 {
 	width: 3px;
 	height: 25%;
-	background-color: black;
+	background-color: rgb(255, 255, 255);
 	position: absolute;
 	top: 0px;
 	left: 70%;
@@ -112,7 +120,7 @@ body {
 #del4 {
 	width: 3px;
 	height: 100px;
-	background-color: black;
+	background-color: rgb(255, 255, 255);
 	transform: rotate(45deg);
 	position: absolute;
 	top: -13px;
@@ -122,7 +130,7 @@ body {
 #del5 {
 	width: 70px;
 	height: 70px;
-	border: 3px solid black;
+	border: 3px solid rgb(255, 255, 255);
 	border-radius: 50%;
 	position: absolute;
 	top: 25%;
@@ -132,7 +140,7 @@ body {
 #del6 {
 	width: 3px;
 	height: 25%;
-	background-color: black;
+	background-color: rgb(255, 255, 255);
 	position: absolute;
 	top: 46%;
 	left: 70%;
@@ -141,7 +149,7 @@ body {
 #del7 {
 	width: 3px;
 	height: 10%;
-	background-color: black;
+	background-color: rgb(255, 255, 255);
 	transform: rotate(45deg);
 	position: absolute;
 	left: 74%;
@@ -151,7 +159,7 @@ body {
 #del8 {
 	width: 3px;
 	height: 10%;
-	background-color: black;
+	background-color: rgb(255, 255, 255);
 	transform: rotate(-45deg);
 	position: absolute;
 	left: 66%;
@@ -161,7 +169,7 @@ body {
 #del9 {
 	width: 3px;
 	height: 10%;
-	background-color: black;
+	background-color: rgb(255, 255, 255);
 	transform: rotate(45deg);
 	position: absolute;
 	left: 66%;
@@ -171,7 +179,7 @@ body {
 #del10 {
 	width: 3px;
 	height: 10%;
-	background-color: black;
+	background-color: rgb(255, 255, 255);
 	transform: rotate(-45deg);
 	position: absolute;
 	left: 74%;
@@ -182,7 +190,7 @@ body {
 .restart {
     font-size: 1rem;
     border: none;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: #01160c;
     padding: .7rem 2rem;
     color: #FFF;
     text-decoration: none;
@@ -190,5 +198,13 @@ body {
 }
 
 .restart:hover {
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(20, 22, 21, 0.4);
+}
+
+/*Footer*/
+
+#copyright {
+    display: flex;
+    justify-content: flex-end;
+    
 }
